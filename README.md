@@ -1,2 +1,2 @@
 # PowerShell
-### Scripts bank for Admin Operations in M365/Azure 
+### Scripts for Admin Operations in M365/Azure 
