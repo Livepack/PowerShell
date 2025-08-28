@@ -1,5 +1,5 @@
 #Step 1: Get the Microsoft Graph Service Principal and AppRole -- System MI Object ID
-$managedIdentityId = "9089fc5a-92a3-476a-bbd8-80585e4f3d68"
+$managedIdentityId = "client id"
 
 # Get the Microsoft Graph Service Principal using AppId
 $graphSPN = Get-MgServicePrincipal -Filter "AppId eq '00000003-0000-0000-c000-000000000000'"
@@ -40,7 +40,7 @@ Get-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $managedIdentityId
 ...
 #For SharePoint Online
 #Step 1: Get the Microsoft Graph Service Principal and AppRole -- System MI Object ID
-$managedIdentityId = "9089fc5a-92a3-476a-bbd8-80585e4f3d68"
+$managedIdentityId = "client id"
 
 # Get the Microsoft Graph Service Principal using AppId
 $graphSPN = Get-MgServicePrincipal -Filter "AppId eq '00000003-0000-0ff1-ce00-000000000000'"
@@ -89,6 +89,7 @@ Grant-PnPAzureADAppSitePermission -AppId "00fa4527-d6cc-40b0-b920-bd85adcbc537" 
 
 #Get, check the permission 
 Get-PnPAzureADAppSitePermission -Site "https://thyssenkrupp.sharepoint.com/sites/is-collaboration/"
+
 
 
 
