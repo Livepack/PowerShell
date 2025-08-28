@@ -82,13 +82,14 @@ Get-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $managedIdentityId
 
 #Next add to the scecipfic sharepoint site
 # Grant permissions to the Azure AD application
-Grant-PnPAzureADAppSitePermission -AppId "f83c218c-b9fb-47db-abe7-f5cca87d7eb6" -DisplayName "aa-testlab" -Site "https://nexttk.sharepoint.com/sites/test-ps" -Permissions "Write"
+Grant-PnPAzureADAppSitePermission -AppId "client id" -DisplayName "aa-name" -Site "https://your-company.sharepoint.com/sites/test-ps" -Permissions "Write"
 
 #Remember you need to be the Site Admin, check here: https://github.com/pnp/powershell/issues/3962
-Grant-PnPAzureADAppSitePermission -AppId "00fa4527-d6cc-40b0-b920-bd85adcbc537" -DisplayName "AT-FT CRM Orbis OCDI DEV" -Site "https://thyssenkrupp.sharepoint.com/sites/at-ft-dev-crm" -Permissions Read, Write
+Grant-PnPAzureADAppSitePermission -AppId "client id " -DisplayName "name" -Site "https://your-compny.sharepoint.com/sites/at-ft-dev-crm" -Permissions Read, Write
 
 #Get, check the permission 
-Get-PnPAzureADAppSitePermission -Site "https://thyssenkrupp.sharepoint.com/sites/is-collaboration/"
+Get-PnPAzureADAppSitePermission -Site "https://your-company.sharepoint.com/sites/is-collaboration/"
+
 
 
 
